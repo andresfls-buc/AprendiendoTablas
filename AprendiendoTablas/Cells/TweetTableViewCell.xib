@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="165" id="KGk-i7-Jjw" customClass="TweetTableViewCell" customModule="AprendiendoTablas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOR-38-IOA">
+                        <rect key="frame" x="90" y="45" width="328" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyV-9j-hoA">
+                        <rect key="frame" x="90" y="65.333333333333329" width="328" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-we-0Px">
+                        <rect key="frame" x="20" y="45" width="60" height="60"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="D7N-oB-gS3"/>
+                            <constraint firstAttribute="width" constant="60" id="ZSC-BV-rHG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="HyV-9j-hoA" secondAttribute="trailing" constant="20" id="4uv-Dg-22l"/>
+                    <constraint firstItem="VOR-38-IOA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="7aS-LX-Nc9"/>
+                    <constraint firstItem="HyV-9j-hoA" firstAttribute="top" secondItem="VOR-38-IOA" secondAttribute="bottom" id="P26-Ok-kRP"/>
+                    <constraint firstAttribute="bottom" secondItem="HBG-we-0Px" secondAttribute="bottom" constant="45" id="PHK-Ei-Cgs"/>
+                    <constraint firstItem="HBG-we-0Px" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="45" id="Vk3-FQ-hEt"/>
+                    <constraint firstItem="HyV-9j-hoA" firstAttribute="leading" secondItem="HBG-we-0Px" secondAttribute="trailing" constant="10" id="ZIP-xc-Avb"/>
+                    <constraint firstAttribute="trailing" secondItem="VOR-38-IOA" secondAttribute="trailing" constant="20" id="eZq-mI-iXP"/>
+                    <constraint firstItem="HBG-we-0Px" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="pPn-aF-iZJ"/>
+                    <constraint firstItem="HBG-we-0Px" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qMT-nr-MHH"/>
+                    <constraint firstItem="VOR-38-IOA" firstAttribute="leading" secondItem="HBG-we-0Px" secondAttribute="trailing" constant="10" id="vSq-Kk-rw1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="messageLabel" destination="HyV-9j-hoA" id="vvx-Qy-WJB"/>
+                <outlet property="userImageView" destination="HBG-we-0Px" id="khM-Dn-5id"/>
+                <outlet property="userNameLabel" destination="VOR-38-IOA" id="96U-Mc-DIK"/>
+            </connections>
+            <point key="canvasLocation" x="-41.221374045801525" y="29.929577464788736"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
